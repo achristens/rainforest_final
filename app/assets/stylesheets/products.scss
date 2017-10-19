@@ -1,0 +1,59 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "normalize";
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+html {
+  box-sizing: inherit;
+  font-family: $content-font;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  line-height: 1.1;
+}
+
+header {
+  border-bottom: 1px solid #f0efef;
+  height: 65px;
+  padding: 0 50px;
+    h1{
+      display: inline-block;
+      font-family: $content-font;
+      margin: 0.5em 0;
+      vertical-align: middle;
+      span{
+        color: $rainforest-pink;}
+      }
+    .main-nav{
+      margin: 0.4em 0;
+      float: right;
+      display: inline-block;}
+    li{
+      padding: 0 20px 0;
+      display: inline-block;}
+      a{
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $link-colour;
+        text-decoration: none;
+      }
+      a:hover{
+        color: $rainforest-pink;}
+    }
+
+.landing-page-grid{
+  display: inline-grid;
+  grid-template-columns: repeat(3, 200px); 
+}
+
+.item{
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
