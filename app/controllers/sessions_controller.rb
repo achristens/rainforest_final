@@ -12,7 +12,6 @@ class SessionsController < ApplicationController
       # The "wristband" aka cookie on the user using the session hash. It's a magic hash like params and flash
       session[:user_id] = u.id
 
-      flash.notice = "You're logged in."
       redirect_to root_url
     else
       render :new
