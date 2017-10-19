@@ -50,10 +50,10 @@ header {
 
 .landing-page-grid{
   display: inline-grid;
-  grid-template-columns: repeat(3, 200px); 
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-.item{
-  grid-row-start: row1-start;
-  grid-row-end: 3;
+.item {
+  img{
+    max-width: 100%;}
 }
