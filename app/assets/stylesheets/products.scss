@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0px;
 }
 
+a {
+  color: $link-colour;
+}
+
 header {
   border-bottom: 1px solid #f0efef;
   height: 65px;
