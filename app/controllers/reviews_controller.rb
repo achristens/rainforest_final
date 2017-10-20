@@ -8,6 +8,7 @@ class ReviewsController < ApplicationController
     @review = Review.create
     @review.review = params[:review][:review]
     @review.product = @product
+    @review.user_id = current_user.id
 
     if @review.save
       flash.notice = "Review has been successfully created."
