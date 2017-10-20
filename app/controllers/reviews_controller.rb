@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
 
   before_action :find_review, only: [:edit, :update, :destroy]
   before_action :find_product, only: [:create, :edit, :update]
+  before_action :ensure_logged_in, except: [:show]
 
   def create
     @review = Review.create
