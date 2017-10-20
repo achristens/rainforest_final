@@ -3,7 +3,8 @@ class ReviewsController < ApplicationController
   before_action :find_review, only: [:edit, :update, :destroy]
   before_action :find_product, only: [:create, :edit, :update]
   before_action :ensure_logged_in, except: [:show]
-
+  before_action :ensure_user_wrote_review, only: [:edit, :update, :destroy]
+  
   def create
     @review = Review.create
     @review.review = params[:review][:review]
@@ -46,5 +47,12 @@ class ReviewsController < ApplicationController
 
   def find_product
     @product = Product.find(params[:product_id])
+  end
+
+  def ensure_user_wrote_review
+    unless current_user == @review.user
+      flash[:alert] = "Please log in first."
+      redirect_to new_sessions_url
+    end
   end
 end
