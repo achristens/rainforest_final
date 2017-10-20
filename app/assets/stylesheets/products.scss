@@ -71,6 +71,7 @@ footer{
   background-color: $black-background;
   color: $white-text;
   text-align: center;
+  margin-top: -4px;
   p{
     font-size: $small-font;}
     a{
@@ -79,6 +80,8 @@ footer{
   .footer-1{
     padding: 40px 0;
     border-bottom: 1px solid #2e2e2e;
+    h3{
+      margin: 0;}
     .icons{
       font-size: 27px;}
   }

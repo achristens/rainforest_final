@@ -9,4 +9,7 @@ class Product < ApplicationRecord
     sprintf("$%.2f", price_in_dollars)
   end
 
+  def self.search(search)
+    where("name LIKE ? or description LIKE ?", "%#{search}%", "%#{search}%")
+  end
 end

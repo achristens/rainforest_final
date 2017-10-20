@@ -1,0 +1,13 @@
+
+
+<div class="product-count">
+  <p>There are <span class="count-number"><%= @products.count %></span> products that match that search</p>
+</div>
+  <% @products.each do |product| %>
+  <div class="product-each">
+    <p><%= link_to(image_tag(product.url), "/products/#{product.id}") %></p>
+    <p class="product_name"><%= link_to product.name, product_path(product) %></p>
+    <p><%= product.price_in_dollars %></p>
+  </div>
+
+  <% end %>
