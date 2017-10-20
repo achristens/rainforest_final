@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
     @product.name = params[:product][:name]
     @product.description = params[:product][:description]
     @product.price_in_cents = params[:product][:price_in_cents]
+    @product.url = params[:product][:url]
 
     if @product.save
       flash[:notice] = "Product has been successfully created."
@@ -36,6 +37,7 @@ class ProductsController < ApplicationController
     @product.name = params[:product][:name]
     @product.description = params[:product][:description]
     @product.price_in_cents = params[:product][:price_in_cents]
+    @product.url = params[:product][:url]
 
     if @product.save
       flash[:notice] = "Product has been successfully updated."
