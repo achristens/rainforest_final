@@ -3,17 +3,17 @@
   <head>
     <title>Rainforest</title>
     <%= csrf_meta_tags %>
-
+    <script src="https://use.fontawesome.com/14d9b72565.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <section class="pre-header">
-      <% if session[:user_id] %>
-        <p>Hello, <%= current_user.email %>!</p>
-      <% end %>
-    </section>
+    <% if session[:user_id] %>
+      <section class="pre-header">
+          <p>Hello, <%= current_user.email %>!</p>
+      </section>
+    <% end %>
     <header>
       <h1>RAIN<span>FOREST</span></h1>
         <nav class="main-nav">
@@ -38,5 +38,20 @@
     <% end %>
 
     <%= yield %>
+
+    <footer>
+      <section class="footer-1">
+        <h3>You Know What Else I Can Do?</h3>
+        <p>Check out some of my other projects, or connect with me on LinkedIn:</p>
+        <div class="icons">
+          <a href="https://github.com/achristens" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/abigail-christens-8898bb30" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </section>
+      <section class="footer-2">
+        <p>Made With ♡ By Abby Christens</p>
+      </section>
+    </footer>
   </body>
+
 </html>
