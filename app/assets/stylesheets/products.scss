@@ -25,6 +25,17 @@ a {
   color: $link-colour;
 }
 
+.pre-header{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  p{
+    margin: 0;
+    font-size: $small-font;
+  }
+}
+
 header {
   border-bottom: 1px solid #f0efef;
   height: 65px;
@@ -32,8 +43,9 @@ header {
     h1{
       display: inline-block;
       font-family: $content-font;
-      margin: 0.2em 0;
+      margin: 0.45em 0;
       vertical-align: middle;
+      font-size: 35px;
       span{
         color: $rainforest-pink;}
       }
@@ -45,7 +57,7 @@ header {
       padding: 0 20px 0;
       display: inline-block;}
       a{
-        font-size: 13px;
+        font-size: $small-font;
         text-transform: uppercase;
         color: $link-colour;
         text-decoration: none;
