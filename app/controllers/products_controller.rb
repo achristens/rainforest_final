@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   # Preloading the find_product method (at the bottom) for ONLY the following methods:
   before_action :find_product, only: [:edit, :show, :update, :destroy]
   before_action :new_product, only: [:create, :new]
+  before_action :create_cookie, only: [:show, :index]
 
   def index
     @products = Product.all

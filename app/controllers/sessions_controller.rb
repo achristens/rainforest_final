@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
     if u && u.authenticate(params[:session][:password])
       # The "wristband" aka cookie on the user using the session hash. It's a magic hash like params and flash
       session[:user_id] = u.id
-      redirect_to root_url
+      # redirect_to products_url
+      redirect_to cookies[:original_referrer]
     else
       render :new
     end

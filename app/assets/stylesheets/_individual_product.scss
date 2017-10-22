@@ -1,0 +1,26 @@
+main{
+  padding: 4% 0 8% 0;
+}
+
+.product-summary, .product-reviews {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 12px;
+  padding: 0 5%;
+}
+
+.product-summary{
+  .product-image{
+    text-align: center;
+     img{
+       width: 500px;
+       max-width: 100%;}
+  }
+
+  .product-details {
+    h2 {
+      text-transform: uppercase; }
+    .description{
+      white-space: pre-line;}
+  }
+}
