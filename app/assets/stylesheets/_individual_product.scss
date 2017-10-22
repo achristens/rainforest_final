@@ -1,4 +1,6 @@
-main{
+@import "variables";
+
+main {
   padding: 4% 0 8% 0;
 }
 
@@ -23,4 +25,24 @@ main{
     .description{
       white-space: pre-line;}
   }
+}
+
+
+.add-review{
+  a{
+    padding: 13px 8px;
+  }
+  a, input[type="submit"]{
+    font-family: $content-font;
+    height: 45px;
+    border: 2px solid $rainforest-pink;
+    color: $rainforest-pink;
+    transition-duration: $slow-transition;
+    text-decoration: none;
+    background-color: #ffffff;}
+     a:hover, input[type="submit"]:hover{
+      border: 2px solid #2d2d2d;
+      transition-duration: $slow-transition;
+      color: #2d2d2d;
+      cursor: pointer;}
 }

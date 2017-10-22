@@ -22,8 +22,8 @@
         <%= render '/reviews/form', review: @review %>
       <% else %>
         <p>You must logged in to leave a review. Sign in or create an account below</p>
-        <li><%= link_to("Add Account", new_users_path) %></li>
-        <li><%= link_to("Sign In", new_sessions_url) %></li>
+        <%= link_to("Sign In", new_sessions_url) %>
+        <%= link_to("Add Account", new_users_path) %>
       <% end %>
     </div>
   </section>
