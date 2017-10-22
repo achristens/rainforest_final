@@ -62,9 +62,11 @@ header {
         text-transform: uppercase;
         color: $link-colour;
         text-decoration: none;
+        transition-duration: $slow-transition;
       }
       a:hover{
-        color: $rainforest-pink;}
+        color: $rainforest-pink;
+        transition-duration: $slow-transition;}
     }
 
 footer{
