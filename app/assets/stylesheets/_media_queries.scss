@@ -1,0 +1,35 @@
+@import "mixins";
+
+/* =============================== Media Queries ================================*/
+
+/* Bridge breaking point for mobiles - mobile menu appears */
+@media screen and  (max-width: 1000px){
+  header {
+    text-align: center;
+  }
+  .main-nav{
+    float: none;
+  }
+}
+
+/*Mobiles below iPad portrait*/
+@media screen and  (max-width: 768px){
+
+
+}
+
+/*iPhone 6 plus*/
+@media screen and (min-width: 414px) and (max-width: 600px){
+
+
+}
+
+/*iPhone Portrait below iPhone 6 plus*/
+@media screen and (max-width: 413px){
+
+}
+
+/*iPhone Portrait below iPhone 6*/
+@media screen and (max-width: 375px){
+
+}

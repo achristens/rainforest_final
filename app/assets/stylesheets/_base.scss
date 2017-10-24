@@ -1,0 +1,135 @@
+@import "variables";
+
+
+html {
+  box-sizing: inherit;
+  font-family: $content-font;
+  letter-spacing: 1px;
+  height: 100%;
+  color: $body-colour;
+}
+
+body{
+  min-height: 100vh;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  letter-spacing: 0px;
+}
+
+a {
+  color: $link-colour;
+}
+
+.pre-header{
+  background-color: $black-background;
+  color: $white-text;
+  padding: 10px;
+  text-align: center;
+  p{
+    margin: 0;
+    font-size: $small-font;
+  }
+}
+
+header {
+  border-bottom: 1px solid #f0efef;
+  height: 65px;
+  padding: 0 50px;
+  .logo{
+    display: inline-block;}
+    h1{
+      font-family: $content-font;
+      margin: 0.45em 0;
+      vertical-align: middle;
+      font-size: 35px;
+      span{
+        color: $rainforest-pink;}
+      }
+    .main-nav{
+      margin: 0.4em 0;
+      float: right;
+      display: inline-block;}
+    li{
+      padding: 0 20px 0;
+      display: inline-block;}
+      a{
+        font-size: $small-font;
+        text-transform: uppercase;
+        color: $link-colour;
+        text-decoration: none;
+        transition-duration: $slow-transition;
+      }
+      a:hover{
+        color: $rainforest-pink;
+        transition-duration: $slow-transition;}
+    }
+
+footer{
+  background-color: $black-background;
+  color: $white-text;
+  text-align: center;
+  margin-top: -4px;
+  p{
+    font-size: $small-font;}
+    a{
+      padding: 0 5px;
+      color: $white-text;}
+  .footer-1{
+    padding: 40px 0;
+    border-bottom: 1px solid #2e2e2e;
+    h3{
+      margin: 0;}
+    .icons{
+      font-size: 27px;}
+  }
+  .footer-2{
+    text-transform: uppercase;
+    p {
+      margin: 0;
+      padding: 11px 0;}
+  }
+}
+
+
+// Login
+main.login{
+  background: #F8F1EB;
+}
+
+main.sign-up{
+  background: #eaeceb;
+}
+
+main.add-product{
+  background: #D1EEF8;
+  textarea{
+    border: none;
+    font-family: $content-font;
+    padding: 10px 15px;
+  }
+}
+
+main.login, main.sign-up, main.add-product {
+  text-align: center;
+    input[type="text"], input[type="email"], input[type="password"] {
+      height: 40px;
+      width: 350px;
+      font-family: $content-font;
+      border: none;
+      margin:  12px 0;
+      padding: 0 15px;}
+    input[type="submit"]{
+      font-family: $content-font;
+      height: 45px;
+      border: 2px solid #000000;
+      color: #000000;
+      background: none;
+      transition-duration: $slow-transition;
+      height: 40px;
+      padding: 0 15px;}
+    input[type="submit"]:hover{
+      cursor: pointer;}
+}
