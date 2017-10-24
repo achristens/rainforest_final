@@ -100,3 +100,44 @@ footer{
       padding: 11px 0;}
   }
 }
+
+
+// Login
+main.login{
+  background: #F8F1EB;
+}
+
+main.sign-up{
+  background: #eaeceb;
+}
+
+main.add-product{
+  background: #D1EEF8;
+  textarea{
+    border: none;
+    font-family: $content-font;
+    padding: 10px 15px;
+  }
+}
+
+main.login, main.sign-up, main.add-product {
+  text-align: center;
+    input[type="text"], input[type="email"], input[type="password"] {
+      height: 40px;
+      width: 350px;
+      font-family: $content-font;
+      border: none;
+      margin:  12px 0;
+      padding: 0 15px;}
+    input[type="submit"]{
+      font-family: $content-font;
+      height: 45px;
+      border: 2px solid #000000;
+      color: #000000;
+      background: none;
+      transition-duration: $slow-transition;
+      height: 40px;
+      padding: 0 15px;}
+    input[type="submit"]:hover{
+      cursor: pointer;}
+}

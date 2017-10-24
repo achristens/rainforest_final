@@ -4,7 +4,7 @@ class ReviewsController < ApplicationController
   before_action :find_product, only: [:create, :edit, :update]
   before_action :ensure_logged_in, except: [:show]
   before_action :ensure_user_wrote_review, only: [:edit, :update, :destroy]
-  
+
   def create
     @review = Review.create
     @review.review = params[:review][:review]
@@ -12,7 +12,6 @@ class ReviewsController < ApplicationController
     @review.user_id = current_user.id
 
     if @review.save
-      flash.notice = "Review has been successfully created."
       redirect_to @product
     end
   end

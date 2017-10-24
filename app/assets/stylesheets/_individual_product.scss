@@ -29,9 +29,10 @@ main {
 
 
 .add-review{
-  a{
-    padding: 13px 8px;
-  }
+  p {
+    padding-bottom: 1em;}
+  a {
+    padding: 13px 8px;}
   a, input[type="submit"]{
     font-family: $content-font;
     height: 45px;
